@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+
+function display()
+{
+   var n1=document.getElementById("t1").value;
+   var n2=document.getElementById("t2").value;
+   if(n1<n2)
+   {
+      document.getElementById("res").innerHTML="first no is smaller";
+   }
+   else
+   {
+      document.getElementById("res").innerHTML="secomd no is smaller";
+   }
+}
+</script>
+<body>
+
+   <form>
+    enter first number:<input type=text name="t1" id="t1" /><br><br>
+	enter second number:<input type=text name="t2" id="t2" /><br><br>
+	
+	<input type=button onclick="display();" value="ok" /><br><br>
+	result:<span id="res" />
+   </form>
+   
+</body>
+</html>   
+
+   
+ 
