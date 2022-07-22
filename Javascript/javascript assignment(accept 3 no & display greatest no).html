@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+
+function display()
+{
+   var n1=document.getElementById("t1").value;
+   var n2=document.getElementById("t2").value;
+   var n3=document.getElementById("t3").value;
+   if(n1>n2 && n1>n3)
+   {
+      document.getElementById("res").innerText="first number is greatest";
+	  
+   }
+   else if(n2>n1 && n2>n3)
+   {
+      document.getElementById("res").innerText="second number is greatest";
+   }
+   else if(n3>n1 && n3>n2)
+   {
+      document.getElementById("res").innerText="third number is greatest";
+   }
+}
+
+</script>
+</head>
+<body>
+  enter first number:<input type="text" name="t1" id="t1" /><br><br>  
+  enter second number:<input type="text" name="t2" id="t2" /><br><br> 
+  enter third number:<input type="text" name="t3" id="t3" /><br><br>
+  <input type="button" onclick="display()" value="click" /><br>
+  result:<span id="res"> </span>
+  
+</body>
+</html>  
