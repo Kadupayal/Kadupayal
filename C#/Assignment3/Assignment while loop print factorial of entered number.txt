@@ -1,0 +1,30 @@
+//print factorial of entered no
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_while_loop_print_factorial_of_no
+{
+     class Program
+    {
+        static void Main(string[] args)
+        {
+            int i,num;
+            int fact = 1;
+            Console.WriteLine("Enter number");
+            num = Convert.ToInt32(Console.ReadLine());
+            i = num;
+            while (i > 0)
+            {
+                fact = fact * i;
+                i--;
+            }
+            Console.WriteLine("fact=" + fact);
+            Console.ReadLine();
+        }
+    }
+}
