@@ -1,0 +1,30 @@
+//print table of entered no
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_do_while_print_table_of_entered_no
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+            int i = 1;
+            int res = 1;
+            Console.WriteLine("Enter number");
+            num = Convert.ToInt32(Console.ReadLine());
+            do
+            {
+                res = num * i;
+                Console.WriteLine("{0}*{1}={2}", num, i, res);
+                i++;
+            } while (i <= 10);
+            Console.ReadLine();
+        }
+    }
+}
+
