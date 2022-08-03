@@ -1,0 +1,25 @@
+// calculate area of rectangle
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_area_of_rectangle
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int l, b;
+            Console.WriteLine("enter length");
+            l = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter bredth");
+            b = Convert.ToInt32(Console.ReadLine());
+            int area = l * b;
+            Console.WriteLine("Area of Rectangle=" + area);
+            Console.ReadLine();
+        }
+    }
+}
