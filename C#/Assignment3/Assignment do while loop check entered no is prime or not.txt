@@ -1,0 +1,41 @@
+//check prime no or not(do while)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_do_while_loop_prime_no_or_not
+{
+     class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+            int m = 0;
+            int i = 1;
+            Console.WriteLine("Enter number");
+            num = Convert.ToInt32(Console.ReadLine());
+            do
+            {
+                if (num % i == 0)
+                {
+                    m = m + 1;
+                }
+                i++;
+            } while (i <= num);
+                if (m == 2)
+                {
+                    Console.WriteLine("it is prime number");
+                }
+                else
+                {
+                    Console.WriteLine("it is not prime number");
+                }
+       
+            Console.ReadLine();
+        }
+    }
+}
+
