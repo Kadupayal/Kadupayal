@@ -1,0 +1,24 @@
+ //wap to print prime no. between 1 and 20(for)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_for_loop_print_1_to_20_no
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+            for(i=1;i<=20;i++)
+            {
+                Console.WriteLine("{0}", i); 
+            }
+            Console.ReadLine();
+        }
+    }
+}
+
