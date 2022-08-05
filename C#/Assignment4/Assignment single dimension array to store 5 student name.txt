@@ -1,0 +1,33 @@
+// create a array to store 5 student name
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_single_dimension_array_create_to_store_5_student_name
+{
+    internal class Program
+    {
+        static void Main()
+        {
+            // create a array to store 5 student name
+            //string[]name=new name[4]{payal,bhumika,monika,raj,prem};
+            string[] name =new string[5];
+            for(int i=0;i<5;i++)
+            {
+                Console.WriteLine("enter name");
+                name[i] = Convert.ToString(Console.ReadLine());
+            }
+            //display the values of array
+            for(int i=0;i<5;i++)
+            {
+                Console.WriteLine("num[{0}]={1}", i, name[i]);
+            }
+            Console.ReadLine();
+
+
+        }
+    }
+}
