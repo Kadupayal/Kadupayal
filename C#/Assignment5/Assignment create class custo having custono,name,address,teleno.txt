@@ -1,0 +1,46 @@
+ // create a class customer having fields custno,custname,custaddress,custtelno
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_creat_class_custo_having_custono__name_addre_custtelno
+{
+    // create a class customer having fields custno,custname,custaddress,custtelno
+
+    class customer
+    {
+        public int custno;
+        public string custname;
+        public string custaddress;
+        public long custteleno;
+    }
+    internal class Program
+    {
+        static void Main()
+        {
+            customer cust = new customer();
+
+            Console.WriteLine("enter customer number");
+            cust.custno = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter customer name");
+            cust.custname = Console.ReadLine();
+
+            Console.WriteLine("enter customer address");
+            cust.custaddress = Console.ReadLine();
+
+            Console.WriteLine("enter customer telephone number");
+            cust.custteleno = Convert.ToInt64(Console.ReadLine());
+
+            Console.WriteLine("custno"+ cust.custno);
+            Console.WriteLine("custname" + cust.custname);
+            Console.WriteLine("custaddress" + cust.custaddress);
+            Console.WriteLine("custteleno" + cust.custteleno);
+            Console.ReadLine();
+        }
+    }
+}
