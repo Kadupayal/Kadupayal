@@ -1,0 +1,36 @@
+// wap to accept a no. and print whether it is primeno or not.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_check_no_is_prime_or_not
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a;
+            Console.WriteLine("Enter any number");
+            a = Convert.ToInt32(Console.ReadLine());
+            if(a==0 || a==1)
+            {
+                Console.WriteLine("it is not prime number");
+
+            }
+            int b = a / 2;
+            if(b%2==0)
+            {
+                Console.WriteLine("it is not  prime number");
+
+            }
+            else
+            {
+                Console.WriteLine("It is prime number");
+            }
+            Console.ReadLine();
+        }
+    }
+}
