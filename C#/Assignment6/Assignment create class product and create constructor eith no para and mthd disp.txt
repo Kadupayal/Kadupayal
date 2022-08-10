@@ -1,0 +1,45 @@
+//create a class product having fields productid,productname,price and quantity create a constructor with no parameters and method display
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_create_class_product_and_constructor_with_no_para.and_mtd_dis
+{
+    //create a class product having fields productid,productname,price and quantity create a constructor with no parameters and method display
+   class Product
+    {
+        int productid;
+        String productname;
+        int productprice;
+        int productquantity;
+        //creating a constructor with no parameter
+        public Product()
+        {
+            productid = 1;
+            productname = "pen";
+            productprice = 50;
+            productquantity = 5;
+        }
+        public void display()
+        {
+            Console.WriteLine("product id=" + productid);
+            Console.WriteLine("product name=" + productname);
+            Console.WriteLine("product price=" + productprice);
+            Console.WriteLine("product quantity=" + productquantity);
+        }
+
+    }
+    class Program
+    {
+        static void Main(string[]args)
+        {
+            Product p = new Product();//this will call constructor automatically
+            p.display();
+            Console.ReadLine();
+        }
+    }
+}
+
