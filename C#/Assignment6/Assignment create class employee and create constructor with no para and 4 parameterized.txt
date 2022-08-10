@@ -1,0 +1,57 @@
+//create a class employee having fields empno,empname , designation and salary create a constructor with no parameters and create another parameterized constructor with 4 parameters
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_create_class_employee_and_constr.with_no_para.and_create_4_para_const
+{
+   // create a class employee having fields empno,empname , designation and salary create a constructor with no parameters and create another parameterized constructor with 4 parameters
+   class Employee
+    {
+        int empno;
+        String empname;
+        String designation;
+        int salary;
+        //creating a constructor with no paramater
+        public Employee()
+        {
+            Console.WriteLine("constructor with no parameters called");
+            empno = 123;
+            empname = "payal";
+            designation = "Engineer";
+            salary = 50000;
+        }
+        //creating a parameterized constructor with 4 parameteres
+        public Employee(int empno,string empname,string designation,int salary)
+        {
+            Console.WriteLine("constructor with parameters called");
+            this.empno = empno;
+            this.empname = empname;
+            this.designation = designation;
+            this.salary = salary;
+        }
+        public void display()
+        {
+            Console.WriteLine("empno:" + empno);
+            Console.WriteLine("empname:" + empname);
+            Console.WriteLine("designation:" + designation);
+            Console.WriteLine("salary:" + salary);
+        }
+    }
+    class Program
+    {
+        static void Main(string[]args)
+        {
+            Employee e1 = new Employee(); //this will call constructor with no parameter automatically
+            e1.display();
+
+            Employee e2 = new Employee(22, "reva", "ips", 90000);//this will call parameterized constructor
+            e2.display();
+
+            Console.ReadLine();
+        }
+    }
+}
