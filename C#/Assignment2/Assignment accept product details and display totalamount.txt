@@ -1,0 +1,32 @@
+// wap to accept productname, productrate , quantity
+display totalamount
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_product_datails_display_total_amouant
+{
+     class Program
+    {
+        static void Main(string[] args)
+        {
+            string name;
+            int rate, quantity, ta;
+            Console.WriteLine("Enter product name");
+            name = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Enter product rate");
+            rate = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter product quantity");
+            quantity = Convert.ToInt32(Console.ReadLine());
+            ta = quantity * rate;
+            Console.WriteLine("Total amount =" + ta);
+
+            Console.ReadLine();
+        }
+
+       
+    }
+}
