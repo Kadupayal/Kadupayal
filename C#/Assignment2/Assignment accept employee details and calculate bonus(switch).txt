@@ -1,0 +1,45 @@
+// wap to empno, empname , designation
+calculate and display bonus ie 10000 for manager
+5000 for clerk
+2000 for peon(switch)
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_employe_details_calculate_bonus
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string empname, designation;
+            int bonus = 0;
+            Console.WriteLine("Enter empname");
+            empname = Console.ReadLine();
+            Console.WriteLine("Enter designation");
+            designation = Console.ReadLine();
+            switch(designation)
+            {
+                case "manager":
+                    bonus = 10000;
+                    break;
+                case "clerk":
+                    bonus = 5000;
+                    break;
+                case "peon":
+                    bonus = 2000;
+                    break;
+                default:
+                    Console.WriteLine("invalid designation");
+                    break;
+            }
+            Console.WriteLine("empname={0},bonus={1}", empname, bonus);
+
+        }
+    }
+}
+
