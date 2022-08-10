@@ -1,0 +1,49 @@
+//wap to accept character from the user and display whether it is vowel or not.(if-else)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_if_else_check_vowel_or_not
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            char ch;
+            Console.WriteLine("enter character");
+            ch = Convert.ToChar(Console.ReadLine());
+            if (ch == 'a')
+            { 
+                Console.WriteLine("it is vowel");
+            }
+            else
+            if(ch=='e')
+            {
+                Console.WriteLine("It is vowel");
+            }
+            else
+            if (ch == 'i')
+            {
+                Console.WriteLine("it is vowel");
+            }
+            else
+            if (ch == 'o')
+            {
+                Console.WriteLine("It is vowel");
+            }
+            else
+            if (ch == 'u')
+            {
+                Console.WriteLine("it is vowel");
+            }
+            else
+            {
+                Console.WriteLine("It is not vowel");
+            }
+            Console.ReadLine();
+        }
+    }
+}
