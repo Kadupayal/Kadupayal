@@ -1,0 +1,61 @@
+//create a class product having fields productid,name , price and quantity create a constructor with no parameters and create another parameterized constructor with 4 parameters
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_create_class_product_and_cons.with_no_para.and_create_con_with_4_par
+{
+   // create a class product having fields productid,name , price and quantity create a constructor with no parameters and create another parameterized constructor with 4 parameters
+   class Product
+    {
+        int productid;
+        String name;
+        int price;
+        int quantity;
+
+        //creating a constructor with no parameter
+        public Product()
+        {
+            Console.WriteLine("constructor with no parameters called");
+            productid = 123;
+            name = "computer";
+            price = 40000;
+            quantity = 5;
+
+        }
+        //creating a parameterized constructor with 4 parameters
+        public Product(int productid,string name,int price,int quantity)
+        {
+            Console.WriteLine("constructor with parameters called");
+            this.productid = productid;
+            this.name = name;
+            this.price = price;
+            this.quantity = quantity;
+        }
+        public void display()
+        {
+            Console.WriteLine("productid:" + productid);
+            Console.WriteLine("name:" + name);
+            Console.WriteLine("price:" + price);
+            Console.WriteLine("quantity:" + quantity);
+
+        }
+    }
+    class Program
+    {
+        static void Main(string[]args)
+        {
+            Product p1 = new Product();//this will call constructor with no parameter automatically
+            p1.display();
+
+            Product p2 = new Product(11, "laptop", 40000, 2);//this will call parameterized constructor
+            p2.display();
+
+            Console.ReadLine();
+        }
+    }
+}
+
