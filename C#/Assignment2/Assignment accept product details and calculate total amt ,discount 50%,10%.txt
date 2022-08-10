@@ -1,0 +1,50 @@
+//wap to accept productname, productrate, quantity
+calculate totalamount , discount ie 50% if totalamount > 2000
+else discount =10% of total amount
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_product_details_if_discount_is_50_and_10
+{
+     class Program
+    {
+        static void Main(string[] args)
+        {
+            string name;
+            int rate, quantity, ta, t, tm;
+            Console.WriteLine("enter Product name");
+            Console.Write("name ="); name = Console.ReadLine();
+
+            Console.WriteLine("Enter the rate");
+            Console.Write("rate ="); rate = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the quantity");
+            Console.Write("quantity ="); quantity = Convert.ToInt32(Console.ReadLine());
+
+            ta = quantity * rate;
+            Console.WriteLine("Total amount =" + ta);
+            if (ta > 2000)
+            {
+
+                Console.WriteLine("you got 50% discount");
+                t = 50 * ta / 100;
+                tm = ta - t;
+                Console.WriteLine("Total amount =" + tm);
+            }
+            else
+            {
+                Console.WriteLine("you got 10% discount");
+                t = 10 * (ta / 100);
+                tm = ta - t;
+                Console.WriteLine("Total amount =" + tm);
+            }
+            Console.ReadLine();
+           
+
+        }
+    }
+}
