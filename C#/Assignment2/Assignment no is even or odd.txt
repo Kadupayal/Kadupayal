@@ -1,0 +1,30 @@
+// wap to accept a no. and print whether it is even no or oddno.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_if_else_if_check_entered_no_is_even_or_not
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+            Console.WriteLine("Enter number");
+            num = Convert.ToInt32(Console.ReadLine());
+            if(num%2==0)
+            {
+                Console.WriteLine("number is even");
+            }
+            else
+            {
+                Console.WriteLine("number is odd");
+            }
+            Console.ReadLine();
+        }
+    }
+}
+
