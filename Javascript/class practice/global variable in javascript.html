@@ -1,0 +1,28 @@
+<script>
+var value=50; //global variable
+function a(){
+alert(value);
+}
+function b(){
+alert(value);
+}
+</script>
+
+
+
+<script type="text/javascript">
+
+function f1()
+{
+window.x=20;
+alert("x="+x)
+}
+function f2()
+{
+f1();
+alert("x="+x);
+}
+
+
+</script>
+<input type=button value=ok onclick="f2();" />
