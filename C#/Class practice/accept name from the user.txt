@@ -1,0 +1,22 @@
+//write a program to accept name from the user and print it
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Accept_name_from_the_user_and_print_it
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name;
+            Console.WriteLine("enter your name");
+            name = Console.ReadLine();
+            Console.WriteLine("name entered=" + name);
+            Console.ReadLine();
+        }
+    }
+}
