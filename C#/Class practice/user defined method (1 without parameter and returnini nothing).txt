@@ -1,0 +1,25 @@
+//wap to create a method display without parameters
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace user_defined_method__1_without_parameter_and_returning_nothing_
+{
+    class Program
+    {
+        static void display()
+        {
+            Console.WriteLine("hello from display method");
+
+        }
+        static void Main(string[]args)
+        {
+            display();
+            Console.WriteLine("bye");
+            Console.ReadLine();
+        }
+    }
+}
