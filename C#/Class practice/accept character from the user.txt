@@ -1,0 +1,22 @@
+//write a program to accept character from the user
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Accept_character_from_the_user
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            char ch;
+            Console.WriteLine("enter character");
+            ch = Convert.ToChar(Console.ReadLine());
+            Console.WriteLine("Character entered=" + ch);
+            Console.ReadLine();
+        }
+    }
+}
