@@ -1,0 +1,26 @@
+//wap to print square of the number
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace method_2_with_parameter_and_no_returntype_print_the_square_of_no
+{
+    internal class Program
+    {
+        static void square(int num)
+        {
+            int sq = num * num;
+            Console.WriteLine("square=" + sq);
+        }
+        static void Main(string[]args)
+        {
+            int num = 5;
+            square(num); //calling the method display
+            Console.WriteLine("bye");
+            Console.ReadLine();
+        }
+    }
+}
