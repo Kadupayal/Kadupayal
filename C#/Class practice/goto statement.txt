@@ -1,0 +1,29 @@
+//wap check entered no is even or odd
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace goto_statement_check_even_or_odd
+{
+     class Program
+    {
+        static void Main(string[] args)
+        {
+            int num=6;
+            if (num % 2 == 0) goto even;
+            Console.WriteLine("odd");
+            goto end;
+
+        even:
+            Console.WriteLine("no is even");
+            goto end;
+        end:
+            Console.WriteLine("bye");
+            Console.ReadLine();
+        }
+        
+    }
+}
