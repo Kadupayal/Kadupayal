@@ -1,0 +1,22 @@
+//wap to create number of array of 2 rows and 3 columns
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace indexof_method_creating_num_array_of_2_rows_and_3_colums
+{
+    internal class Program
+    {
+        static void Main()
+        {
+            int[] num = { 3, 5, 1, 2, 4 };
+
+            int l = Array.IndexOf(num, 2);
+            Console.WriteLine("index" + l);
+            Console.ReadLine();
+        }
+    }
+}
