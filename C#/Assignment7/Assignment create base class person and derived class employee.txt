@@ -1,0 +1,52 @@
+1)// create a base class person having fields name and address,
+create a derieved class employee having fields empno,salary and designation.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_create_base_class_peson_and_derived_class_employee
+{
+    /* create a base class person having fields name and address,
+    create a derieved class employee having fields empno,salary and designation.*/
+
+    //creating a base class Person
+    public class Person
+    {
+       public String name;
+       public String address;
+    }
+    //creating a derieved class employee
+    public class Employee : Person
+    {
+        public int empno;
+        public int salary;
+        public string designation;
+    }
+        class Testinheritance
+        {
+            public static void Main(string[] args)
+            {
+                Employee p1 = new Employee();
+                p1.name = "payal";
+                p1.address = "amravati";
+                p1.empno = 12;
+                p1.salary = 40000;
+                p1.designation = "assistant";
+
+                Console.WriteLine("name:" + p1.name);
+                Console.WriteLine("address:" + p1.address);
+                Console.WriteLine("empno:" + p1.empno);
+                Console.WriteLine("salary:" + p1.salary);
+                Console.WriteLine("designation:" + p1.designation);
+
+            Console.ReadLine();
+            }
+        }
+
+}
+
+
+    
