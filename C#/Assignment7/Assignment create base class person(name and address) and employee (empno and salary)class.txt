@@ -1,0 +1,62 @@
+//create base class person(name and address) and employee(empno and salary) class
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_single_level_inheritance_crete_base_class_peson_and_derive_class_emp
+{
+   //create base class person(name and address) and employee(empno and salary) class
+  
+    public class Person
+    {
+        String name;
+        String address;
+
+        public void getPersonData(string name,string address)
+        {
+            this.name = name;
+            this.address = address;
+        }
+        public void displayPersonData()
+        {
+            Console.WriteLine("name:" + name);
+            Console.WriteLine("address:" + address);
+        }
+       
+    }
+    public class Employee : Person
+    {
+        int empno;
+        int salary;
+
+        public void getEmployeeData(int empno,int salary)
+        {
+            this.empno = empno;
+            this.salary = salary;
+        }
+        public void displayEmployeeData()
+        {
+            Console.WriteLine("empno:" + empno);
+            Console.WriteLine("salary:" + salary);
+        }
+    }
+    class TestInheritance
+    {
+        public static void Main(string[]args)
+        {
+            Employee p1 = new Employee();
+            p1.getPersonData("payal", "amravati");
+            p1.getEmployeeData(12, 40000);
+            p1.displayEmployeeData();
+            p1.displayEmployeeData();
+
+            Console.ReadLine();
+
+
+        }
+    }
+
+}
