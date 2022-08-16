@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace multilevel_inheritance_example2___Person_base_class_
+{
+    public class person
+    {
+        String name;
+        String address;
+        public void getPersonData(string name,string address)
+        {
+            this.name = name;
+            this.address = address;
+        }
+        public void displayPersonData()
+        {
+            Console.WriteLine("name:" + name);
+            Console.WriteLine("address:" + address);
+        }
+    }
+    public class Employee : person
+    {
+        int salary;
+        String designation;
+        public void getEmployeeData(int salary,string designation)
+        {
+            this.salary = salary;
+            this.designation = designation;
+        }
+        public void displayEmployeeData()
+        {
+            Console.WriteLine("salary:" + salary);
+            Console.WriteLine("designation:" + designation);
+        }
+    }
+    public class ParttimeEmployee : Employee
+    {
+        int no_of_hours;
+        public void getParttimeEmployeeData(int no_of_hours)
+        {
+            this.no_of_hours = no_of_hours;
+        }
+        public void displayparttimeEmployeeData()
+        {
+            Console.WriteLine("no of hours:" + no_of_hours);
+        }
+    }
+    class TeatInheritance
+    {
+        public static void Main(string[]args)
+        {
+            ParttimeEmployee p1 = new ParttimeEmployee();
+            p1.getPersonData("arifa", "nagpur");
+            p1.getEmployeeData(111, "manager");
+            p1.getParttimeEmployeeData(5);
+            p1.displayPersonData();
+            p1.displayEmployeeData();
+            p1.displayparttimeEmployeeData();
+
+            Console.ReadLine();
+        }
+    }
+}
