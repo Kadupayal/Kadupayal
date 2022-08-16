@@ -1,0 +1,88 @@
+/*create a base class account having fields actno,bal and methods withdrawl and showbalance
+  create a derived class current inherited from account class and override the withdrawl method
+  create another derived class saving inherited from account class and override the withdrawl
+  method (addinterest with amount)
+  (by accepting type of account(Saving or current)) */
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_Runtime_polymorphism_base_class_account_saving_current_withdrawl_
+{
+        class Account
+        {
+            public int actno;
+            public int balance = 1000;
+
+            public virtual String withdrawl(int actno, int amount)
+            {
+                return "withdrawl method of account class";
+            }
+            public String showbalance()
+            {
+                return "balance amount : " + balance;
+            }
+            
+        }
+
+        class Current : Account
+        {
+            //overriding the base class deposit method
+            public override string withdrawl(int actno, int amount)
+            {
+                this.actno = actno;
+                balance = balance - amount;
+                return "amount withdrawl successfully from current class";
+            }
+        }
+
+        class Saving : Account
+        {
+            //overriding the base class deposit method
+            public override string withdrawl(int actno, int amount)
+            {
+                this.actno = actno;
+                balance = balance - amount;
+                return "amount withdrawl successfully from saving class";
+            }
+        }
+        internal class Program
+        {
+            static void Main(string[] args)
+            {
+
+                //runtime polymorphism : base class reference variable having instance of derieved class current
+
+                Console.WriteLine("enter account no: ");
+                int actno = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("enter amount to be withdrawl: ");
+                int amount = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("enter account type (saving or currrent):");
+                String acttype = Console.ReadLine();
+
+                Account act = null;
+                if (acttype == "saving")
+                {
+                    act = new Saving();
+                }
+                else if (acttype == "current")
+                {
+                    act = new Current();
+                }
+                String res = act.withdrawl(actno, amount);
+                Console.WriteLine("account no is " + act.actno);
+                Console.WriteLine(res);
+                string res1 = act.showbalance();
+                Console.WriteLine(res1);
+
+                Console.ReadLine();
+
+            }
+        }
+
+    }
+
