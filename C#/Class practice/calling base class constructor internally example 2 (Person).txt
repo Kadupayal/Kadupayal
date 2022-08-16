@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace calling_base_class_constructor_internally_example_2__Person_
+{
+    public class Animal
+    {
+        public Animal()
+        {
+            Console.WriteLine("animal...");
+        }
+    }
+    public class Dog:Animal
+    {
+        public Dog()
+        {
+            Console.WriteLine("dog...");
+        }
+    }
+    public class TestOverriding
+    {
+        public static void Main()
+        {
+            Dog d = new Dog();
+
+            Console.ReadLine();
+        }
+    }
+
+}
