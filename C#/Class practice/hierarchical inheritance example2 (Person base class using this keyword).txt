@@ -1,0 +1,75 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace hierarchical_inheritance_example2__Person_base_class_using_this_keyword_
+{
+    class person
+    {
+        String name;
+        String address;
+        public void getpersonData(string name,string address)
+        {
+            this.name = name;
+            this.address = address;
+        }
+        public void displaypersonData()
+        {
+            Console.WriteLine("name:" + name);
+            Console.WriteLine("address:" + address);
+        }
+    }
+    class student : person
+    {
+        int rno;
+        int marks;
+        public void getstudentData(int rno,int marks)
+        {
+            this.rno = rno;
+            this.marks = marks;
+        }
+        public void displaystudentData()
+        {
+            Console.WriteLine("rno:" + rno);
+            Console.WriteLine("marks:" + marks);
+        }
+    }
+    class employee: person
+    {
+        int salary;
+        String designation;
+        public void getemployeeData(int salary,string designation)
+        {
+            this.salary = salary;
+            this.designation = designation;
+        }
+        public void displayemployeeData()
+        {
+            Console.WriteLine("salary:" + salary);
+            Console.WriteLine("designation:" + designation);
+        }
+    }
+    class TestInheritance
+    {
+        public static void Main(string[] args)
+        {
+            //creating object of student class
+            student p1 = new student();//creating object of child class\
+            p1.getpersonData("arifa", "nagpur");
+            p1.getstudentData(111, 999);
+            p1.displaypersonData();
+            p1.displaystudentData();
+
+            //creating object of employee class
+            employee e1 = new employee();
+            e1.getpersonData("monish", "nagpur");
+            e1.getemployeeData(9999, "manager");
+            e1.displaypersonData();
+            e1.displayemployeeData();
+
+            Console.ReadLine();
+        }
+    }
+}
