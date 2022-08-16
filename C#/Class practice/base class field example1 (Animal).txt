@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace base_class_field_example1__Animal_
+{
+    public class Animal
+    {
+        public String color = "white";
+    }
+    public class Dog : Animal
+    {
+        string color = "black";
+        public void showColor()
+        {
+            Console.WriteLine(base.color);
+            Console.WriteLine(color);
+        }
+    }
+    public class TestBase
+    {
+        public static void Main()
+        {
+            Dog d = new Dog();
+            d.showColor();
+
+            Console.ReadLine();
+        }
+    }
+}
