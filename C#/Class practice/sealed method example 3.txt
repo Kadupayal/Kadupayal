@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace sealed_method_example_3
+{
+    public class TestSealed
+    {
+
+        public static void Main()
+        {
+           sealed int x = 10;
+            x++;
+            Console.WriteLine(x);
+            Console.ReadLine();
+        }
+    }
+}
