@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace sealed_class_example_1
+{
+   sealed class student
+    {
+
+    }
+    class parttimstudent:student //error since student is declared sealed
+    {
+
+    }
+    class Program
+    {
+        static void Main(string[]args)
+        {
+            Console.ReadLine();
+        }
+    }
+}
