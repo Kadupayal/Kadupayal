@@ -1,0 +1,43 @@
+using System;
+using First;
+using First.Second;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace First
+{
+    public class Hello
+    {
+        public void sayHello()
+        {
+            Console.WriteLine("Hello First Namespace");
+        }
+    }
+    //creating a nested namespace
+    namespace Second
+    {
+        public class Welcome
+        {
+            public void sayHello()
+            {
+                Console.WriteLine("Hello Second Namespace");
+            }
+        }
+    }
+}
+namespace namespace_example_4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Hello h1 = new Hello();
+            h1.sayHello();
+            Welcome w = new Welcome();
+            w.sayHello();
+
+            Console.ReadLine();
+        }
+    }
+}
