@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace execution_handling_ex4__try_catch_finally___array_
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] num = { 1, 2, 3 };
+            try
+            {
+                Console.WriteLine(num[1]);
+                Console.WriteLine(num[3]); //error will come
+            }
+            catch(Exception ee) //code will execute only if run time error occurs
+            {
+                Console.WriteLine("catch block is executing");
+                Console.WriteLine(ee.ToString());
+
+            }
+            finally //code will execute whether errors occurs or not
+            {
+                Console.WriteLine("finally block is executting");
+            }
+            Console.WriteLine();
+            Console.ReadLine();
+        }
+    }
+}
