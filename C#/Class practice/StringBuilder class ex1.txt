@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Strinbuilder__class_ex1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("amitabh");
+            sb.Append("bachan");
+            Console.WriteLine(sb.ToString());
+            Console.WriteLine("bye");
+            Console.ReadLine();
+        }
+    }
+}
